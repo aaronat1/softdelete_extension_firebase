@@ -1,0 +1,1 @@
+# softdelete_extension_firebase
