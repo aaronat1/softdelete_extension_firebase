@@ -1,3 +1,7 @@
+## Version 0.1.2
+
+- Fix: archive path now uses 4 segments (`_deleted/{collection}/items/{docId}`) instead of 3, which was invalid for Firestore document references.
+
 ## Version 0.1.1
 
 - Fix: set Node.js engine to 18 for Cloud Build compatibility.

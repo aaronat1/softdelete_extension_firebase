@@ -21,7 +21,7 @@ async function handleDelete(snapshot) {
     }
     const docId = snapshot.ref.id;
     const originalData = snapshot.data();
-    const archiveDocPath = `${ARCHIVE_COLLECTION}/${topCollection}/${docId}`;
+    const archiveDocPath = `${ARCHIVE_COLLECTION}/${topCollection}/items/${docId}`;
     const archivedData = {
         ...originalData,
         [DELETED_AT_FIELD]: admin.firestore.FieldValue.serverTimestamp(),

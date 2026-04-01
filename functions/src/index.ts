@@ -29,7 +29,7 @@ async function handleDelete(
   const docId = snapshot.ref.id;
   const originalData = snapshot.data();
 
-  const archiveDocPath = `${ARCHIVE_COLLECTION}/${topCollection}/${docId}`;
+  const archiveDocPath = `${ARCHIVE_COLLECTION}/${topCollection}/items/${docId}`;
 
   const archivedData = {
     ...originalData,

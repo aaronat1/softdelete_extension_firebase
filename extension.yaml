@@ -1,5 +1,5 @@
 name: firestore-soft-delete
-version: 0.1.1
+version: 0.1.2
 specVersion: v1beta
 displayName: Firestore Soft Delete
 description: >-
@@ -121,7 +121,7 @@ params:
     label: Archive collection name
     description: >-
       The root collection where deleted documents will be archived.
-      Documents are stored as {ARCHIVE_COLLECTION}/{originalCollection}/{documentId}.
+      Documents are stored as {ARCHIVE_COLLECTION}/{originalCollection}/items/{documentId}.
     type: string
     default: _deleted
     required: true
